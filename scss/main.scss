@@ -1,0 +1,140 @@
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$grid-gutter-width: 10px;
+$container-large-desktop: (965px + $grid-gutter-width);
+/* Import Bootstrap */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+/*body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/bg.jpg);
+  position: relative;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+  line-height: 23px;
+}
+
+.header {
+
+}
+
+.swamp-rabbit {
+  height: 300px;
+  border: 1px solid black;
+  background-color: #f3f3f3;
+}
+
+.swamp-rabbit h1 {
+  text-align: center;
+  line-height: 200px;
+  padding-top: 90px;
+  font-size: 57px;
+}
+
+.header-logo {
+  height: 75px;
+  border: 1px solid black;
+  top: 50px;
+  background-color: white;
+}
+
+.header-logo p {
+  text-align: center;
+  line-height: 75px;
+}
+
+.best-gear {
+  height: 125px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: white;
+  padding-top: 34px;
+}
+
+.best-gear p {
+  text-align: center;
+  font-size: 25px;
+  line-height: 23px;
+}
+
+.recent-photo {
+  height: 200px;
+  background-color: #f3f3f3;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 25px;
+}
+
+.recent-photo {
+  text-align: center;
+  line-height: 20px;
+}
+
+.mountain-bikes {
+  height: 150px;
+  padding-top: 25px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.contact {
+  height: 300px;
+  padding-top: 50px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.copyright {
+  height: 50px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/*header {
+  background: url("http://unsplash.it/1024/337") center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 337px;
+  border: 2px solid white;
+}*/
+
+/*.article-box {
+  // width: 334px;
+  height: 354px;
+  background-color: white;
+  border-bottom: 4px solid rgba(147, 147, 147, 0.6);
+  padding: 30px 30px 23px 29px;
+  display: inline-block;
+  margin-bottom: 37px;
+}
+
+.article-box h1 {
+  color: black;
+  font-size: 23.2px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.article-box p {
+  font-size: 12px;
+  line-height: 24px;
+}*/
