@@ -5811,13 +5811,28 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-/*body {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-image: url(../images/bg.jpg);
-  position: relative;
-}*/
+@media (max-width: 480px) {
+  .show-mobile {
+    display: block; }
+
+  .hide-mobile {
+    display: none; }
+
+  .header-logo {
+    width: 20%; }
+
+  .recent-photo {
+    border-right: 1px solid black;
+    height: 300px; }
+
+  .mountain-bikes {
+    display: none; } }
+@media (min-width: 481px) {
+  .show-mobile {
+    display: none; }
+
+  .hide-mobile {
+    display: block; } }
 * {
   box-sizing: border-box; }
 
@@ -5906,34 +5921,5 @@ h2 {
 
 .copyright p {
   line-height: 50px; }
-
-/*header {
-  background: url("http://unsplash.it/1024/337") center center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  height: 337px;
-  border: 2px solid white;
-}*/
-/*.article-box {
-  // width: 334px;
-  height: 354px;
-  background-color: white;
-  border-bottom: 4px solid rgba(147, 147, 147, 0.6);
-  padding: 30px 30px 23px 29px;
-  display: inline-block;
-  margin-bottom: 37px;
-}
-
-.article-box h1 {
-  color: black;
-  font-size: 23.2px;
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-.article-box p {
-  font-size: 12px;
-  line-height: 24px;
-}*/
 
 /*# sourceMappingURL=main.css.map */
