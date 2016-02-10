@@ -5829,6 +5829,10 @@ p {
   font-size: 25px;
   line-height: 23px; }
 
+h2 {
+  text-align: center;
+  font-size: 30px; }
+
 .swamp-rabbit {
   height: 300px;
   border: 1px solid black;
@@ -5867,17 +5871,19 @@ p {
   height: 200px;
   background-color: #f3f3f3;
   border-left: 1px solid black;
-  border-right: 1px solid black;
   border-bottom: 1px solid black;
-  padding-top: 25px; }
+  padding-top: 50px; }
 
-.recent-photo {
+.recent-photo:last-child {
+  border-right: 1px solid black; }
+
+.recent-photo h2 {
   text-align: center;
   line-height: 20px; }
 
 .mountain-bikes {
   height: 150px;
-  padding-top: 25px;
+  padding-top: 30px;
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black; }
@@ -5889,11 +5895,17 @@ p {
   border-right: 1px solid black;
   border-bottom: 1px solid black; }
 
+.contact h2 {
+  line-height: 67px; }
+
 .copyright {
   height: 50px;
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black; }
+
+.copyright p {
+  line-height: 50px; }
 
 /*header {
   background: url("http://unsplash.it/1024/337") center center;
