@@ -5894,6 +5894,11 @@ h2 {
     .best-gear p {
       font-size: 18px; } }
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto; }
+
 .recent-photo {
   height: 200px;
   background-color: #f3f3f3;
