@@ -6,11 +6,11 @@ $container-large-desktop: (965px + $grid-gutter-width);
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
-@media screen and (max-width: 480px) {
-  $container-small: (480px + $grid-gutter-width);
-/*  .show-mobile {
+@media (max-width: 480px) {
+  //$container-small: (480px + $grid-gutter-width);
+  .show-mobile {
     display: block;
-  }*/
+  }
   .hide-mobile {
     display: none;
     visibility: hidden;
@@ -37,6 +37,9 @@ $container-large-desktop: (965px + $grid-gutter-width);
   }
   .hide-mobile {
     display: block;
+  }
+  .header-logo {
+    background-color: red;
   }
 }
 
@@ -72,6 +75,9 @@ h2 {
   line-height: 200px;
   padding-top: 90px;
   font-size: 57px;
+  @media (max-width: 760px) {
+    font-size: 36px;
+  }
 }
 
 .header-logo {
@@ -97,6 +103,9 @@ h2 {
   text-align: center;
   font-size: 25px;
   line-height: 23px;
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 .recent-photo {
@@ -104,10 +113,13 @@ h2 {
   background-color: #f3f3f3;
   padding-top: 50px;
   border: $border-style;
-}
-
-.recent-photo:last-child {
-  border: $border-style;
+  @media (max-width: 480px) {
+    height: 300px;
+    padding-top: 100px;
+    .hide-mobile {
+      display: none;
+    }
+  }
 }
 
 .recent-photo h2 {
@@ -125,10 +137,23 @@ h2 {
   height: 300px;
   padding-top: 50px;
   border: $border-style;
+  @media (max-width: 480px) {
+    padding-top: 75px;
+  }
 }
 
 .contact h2 {
   line-height: 67px;
+  @media (max-width: 480px) {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.contact p {
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 .copyright {
@@ -138,4 +163,7 @@ h2 {
 
 .copyright p {
   line-height: 50px;
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 }
