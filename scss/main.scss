@@ -6,22 +6,28 @@ $container-large-desktop: (965px + $grid-gutter-width);
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
-@media (max-width: 480px) {
-  .show-mobile {
+@media screen and (max-width: 480px) {
+  $container-small: (480px + $grid-gutter-width);
+/*  .show-mobile {
     display: block;
-  }
+  }*/
   .hide-mobile {
     display: none;
+    visibility: hidden;
   }
   .header-logo {
     width: 20%;
+    background-color: red;
   }
-  .recent-photo {
-    border-right: 1px solid black;
-    height: 300px;
+  .swamp-rabbit h1 {
+    font-size: 48px;
   }
   .mountain-bikes {
     display: none;
+  }
+  .mobile-photo {
+    height: 300px;
+    border-right: 1px solid black;
   }
 }
 
@@ -34,7 +40,7 @@ $container-large-desktop: (965px + $grid-gutter-width);
   }
 }
 
-
+$border-style: 1px solid black;
 
 * {
   box-sizing: border-box;
@@ -57,8 +63,8 @@ h2 {
 
 .swamp-rabbit {
   height: 300px;
-  border: 1px solid black;
   background-color: #f3f3f3;
+  border: $border-style;
 }
 
 .swamp-rabbit h1 {
@@ -70,9 +76,9 @@ h2 {
 
 .header-logo {
   height: 75px;
-  border: 1px solid black;
   top: 50px;
   background-color: white;
+  border: $border-style;
 }
 
 .header-logo p {
@@ -82,11 +88,9 @@ h2 {
 
 .best-gear {
   height: 125px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
   background-color: white;
   padding-top: 34px;
+  border: $border-style;
 }
 
 .best-gear p {
@@ -98,13 +102,12 @@ h2 {
 .recent-photo {
   height: 200px;
   background-color: #f3f3f3;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
   padding-top: 50px;
+  border: $border-style;
 }
 
 .recent-photo:last-child {
-  border-right: 1px solid black;
+  border: $border-style;
 }
 
 .recent-photo h2 {
@@ -115,17 +118,13 @@ h2 {
 .mountain-bikes {
   height: 150px;
   padding-top: 30px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border: $border-style;
 }
 
 .contact {
   height: 300px;
   padding-top: 50px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border: $border-style;
 }
 
 .contact h2 {
@@ -134,9 +133,7 @@ h2 {
 
 .copyright {
   height: 50px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border: $border-style;
 }
 
 .copyright p {
